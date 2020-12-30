@@ -2,10 +2,10 @@
 
 import MissHinata.modules.sql.blacklistusers_sql as sql
 from MissHinata import (DEV_USERS, OWNER_ID, SUDO_USERS, SUPPORT_USERS,
-                          TIGER_USERS, WHITELIST_USERS, dispatcher)
+                        TIGER_USERS, WHITELIST_USERS, dispatcher)
 from MissHinata.modules.helper_funcs.chat_status import dev_plus
 from MissHinata.modules.helper_funcs.extraction import (extract_user,
-                                                          extract_user_and_text)
+                                                        extract_user_and_text)
 from MissHinata.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest

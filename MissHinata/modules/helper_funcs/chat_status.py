@@ -1,8 +1,7 @@
 from functools import wraps
 
 from MissHinata import (DEL_CMDS, DEV_USERS, SUDO_USERS, SUPPORT_CHAT,
-                          SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS,
-                          dispatcher)
+                        SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS, dispatcher)
 from MissHinata.mwt import MWT
 from telegram import Chat, ChatMember, ParseMode, Update
 from telegram.ext import CallbackContext

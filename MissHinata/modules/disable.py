@@ -15,8 +15,9 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
 
-    from MissHinata.modules.helper_funcs.chat_status import (
-        connection_status, is_user_admin, user_admin)
+    from MissHinata.modules.helper_funcs.chat_status import (connection_status,
+                                                             is_user_admin,
+                                                             user_admin)
     from MissHinata.modules.sql import disable_sql as sql
     from telegram.ext.dispatcher import run_async
 

@@ -7,7 +7,7 @@ from MissHinata import LOGGER, MESSAGE_DUMP, SUPPORT_CHAT, dispatcher
 from MissHinata.modules.disable import DisableAbleCommandHandler
 from MissHinata.modules.helper_funcs.chat_status import user_admin
 from MissHinata.modules.helper_funcs.misc import (build_keyboard,
-                                                    revert_buttons)
+                                                  revert_buttons)
 from MissHinata.modules.helper_funcs.msg_types import get_note_type
 from MissHinata.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 from telegram import (MAX_MESSAGE_LENGTH, InlineKeyboardMarkup, Message,

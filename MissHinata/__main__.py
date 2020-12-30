@@ -4,9 +4,9 @@ import re
 from sys import argv
 from typing import Optional
 
-from MissHinata import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          dispatcher, StartTime, telethn, updater)
+from MissHinata import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER, OWNER_ID,
+                        PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, dispatcher,
+                        StartTime, telethn, updater)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from MissHinata.modules import ALL_MODULES
@@ -207,8 +207,7 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="❗ HELP ❗",
-                             callback_data="help_back")
+                             text="❗ HELP ❗", callback_data="help_back")
                      ]]))
     else:
         update.effective_message.reply_text(

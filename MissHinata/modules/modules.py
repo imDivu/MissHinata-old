@@ -2,8 +2,8 @@ import importlib
 
 from MissHinata import dispatcher
 from MissHinata.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
-                                   HELPABLE, IMPORTED, MIGRATEABLE, STATS,
-                                   USER_INFO, USER_SETTINGS)
+                                 HELPABLE, IMPORTED, MIGRATEABLE, STATS,
+                                 USER_INFO, USER_SETTINGS)
 from MissHinata.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,8 +18,7 @@ def load(update: Update, context: CallbackContext):
         f"Attempting to load module : <b>{text}</b>", parse_mode=ParseMode.HTML)
 
     try:
-        imported_module = importlib.import_module("MissHinata.modules." +
-                                                  text)
+        imported_module = importlib.import_module("MissHinata.modules." + text)
     except:
         load_messasge.edit_text("Does that module even exist?")
         return
@@ -85,8 +84,7 @@ def unload(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML)
 
     try:
-        imported_module = importlib.import_module("MissHinata.modules." +
-                                                  text)
+        imported_module = importlib.import_module("MissHinata.modules." + text)
     except:
         unload_messasge.edit_text("Does that module even exist?")
         return

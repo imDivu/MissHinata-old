@@ -4,10 +4,9 @@ import os
 from typing import Optional
 
 from MissHinata import (DEV_USERS, OWNER_ID, SUDO_USERS, SUPPORT_CHAT,
-                          SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS,
-                          dispatcher)
+                        SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS, dispatcher)
 from MissHinata.modules.helper_funcs.chat_status import (dev_plus, sudo_plus,
-                                                           whitelist_plus)
+                                                         whitelist_plus)
 from MissHinata.modules.helper_funcs.extraction import extract_user
 from MissHinata.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update

@@ -188,7 +188,9 @@ SUPPORT_USERS = list(SUPPORT_USERS)
 TIGER_USERS = list(TIGER_USERS)
 
 # Load at end to ensure all prev variables have been set
-from MissHinata.modules.helper_funcs.handlers import (CustomCommandHandler, CustomMessageHandler, CustomRegexHandler)
+from MissHinata.modules.helper_funcs.handlers import (CustomCommandHandler,
+                                                      CustomMessageHandler,
+                                                      CustomRegexHandler)
 
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler

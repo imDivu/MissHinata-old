@@ -6,13 +6,13 @@ import telegram
 from MissHinata import BAN_STICKER, TIGER_USERS, WHITELIST_USERS, dispatcher
 from MissHinata.modules.disable import DisableAbleCommandHandler
 from MissHinata.modules.helper_funcs.chat_status import (bot_admin,
-                                                           can_restrict,
-                                                           is_user_admin,
-                                                           user_admin,
-                                                           user_admin_no_reply)
+                                                         can_restrict,
+                                                         is_user_admin,
+                                                         user_admin,
+                                                         user_admin_no_reply)
 from MissHinata.modules.helper_funcs.extraction import (extract_text,
-                                                          extract_user,
-                                                          extract_user_and_text)
+                                                        extract_user,
+                                                        extract_user_and_text)
 from MissHinata.modules.helper_funcs.filters import CustomFilters
 from MissHinata.modules.helper_funcs.misc import split_message
 from MissHinata.modules.helper_funcs.string_handling import split_quotes

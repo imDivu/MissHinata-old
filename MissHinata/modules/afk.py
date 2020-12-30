@@ -2,7 +2,7 @@ import random
 
 from MissHinata import dispatcher
 from MissHinata.modules.disable import (DisableAbleCommandHandler,
-                                          DisableAbleMessageHandler)
+                                        DisableAbleMessageHandler)
 from MissHinata.modules.sql import afk_sql as sql
 from MissHinata.modules.users import get_user_id
 from telegram import MessageEntity, Update

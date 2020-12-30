@@ -14,7 +14,7 @@ from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
 from MissHinata import (DEV_USERS, OWNER_ID, SUDO_USERS, SUPPORT_USERS,
-                          TIGER_USERS, WHITELIST_USERS, INFOPIC, dispatcher, sw)
+                        TIGER_USERS, WHITELIST_USERS, INFOPIC, dispatcher, sw)
 from MissHinata.__main__ import STATS, TOKEN, USER_INFO
 import MissHinata.modules.sql.userinfo_sql as sql
 from MissHinata.modules.disable import DisableAbleCommandHandler
